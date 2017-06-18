@@ -1,0 +1,25 @@
+//Colors
+
+$mainColor:#794ed2;
+$mainColorHover:#9785e7;
+$secondColor:#1be7e8;
+$thirdColor:#E8E8E8;
+$grey:#f6f6f7;
+$darkGrey:#eeeeee;
+$white:#FFFFFF;
+$darkPurple:#2b2446;
+$footerColor:#4b4c6e;
+
+
+
+@mixin font($family-type, $size: 1rem, $weight : normal, $color : $DarkBlue){
+  font: {
+    family: $family-type;
+    size: $size;
+    weight: $weight;
+  }
+  color: $color;
+}
+
+$Sams:'Noto Sans',"Helvetica Neue", Helvetica, Arial, sans-serif;
+$Serif:'Georgia',serif;

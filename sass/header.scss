@@ -1,0 +1,197 @@
+/*  ====================    OUR HEADER   ====================*/
+header.sticky{
+	z-index: 101;
+	position: fixed;
+	width:100%;
+	.container{
+		width:100%;
+		padding: 5px 20px;
+
+		background-color: $darkPurple!important;
+
+		background-color:white;
+		.head-log{
+			display:none;
+		}
+		.head-menu{
+			width:100%;
+			justify-content: space-around;
+			ul{
+				li{
+					a{
+						color:white;
+						&:hover{
+							color:$mainColorHover;
+						}
+					}
+				}
+
+			}
+		}
+		a.head-button{
+			margin-left:auto;
+		}
+	}
+}
+header{
+	position: relative;
+	.container{
+		-webkit-transition: all 0.4s ease;
+		padding: 15px 0px 10px;
+		display:flex;
+		.head-log{
+			width:225px;
+			height:60px;
+			background-image:url(../img/logo.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			margin-right:auto;
+
+		}
+		.head-menu{
+			display: flex;
+			align-items: center;
+			ul{
+				list-style: none;
+
+				display: flex;
+				li {
+					margin-right:20px;
+					a{
+						text-transform: uppercase;
+						text-decoration: none;
+						@include font($Sams,1rem,400,$darkPurple);
+					}
+					&:hover a{
+						color:$mainColor;
+					}
+				}
+
+			}
+			a.head-button{
+				background-color:$mainColor;
+				text-transform: uppercase;
+				@include font($Sams,0.875rem,400,$white);
+				text-decoration: none;
+				padding: 15px 33px;
+				border-radius: 5px;
+				margin-right: 25px;
+			}
+			a.head-button:hover{
+				background-color:$mainColorHover;
+			}
+			.flag{
+				cursor:pointer;
+				width:34px;
+				height:24px;
+				background-image:url(../img/Union_flag_h.png);
+				background-repeat:no-repeat;
+				background-position: center;
+				&.en{
+					background-image:url(../img/Union_flag_h.png);
+				}
+				&.ru{
+					background-image:url(../img/Flag_of_Russia_h.png);
+				}
+				&.gr{
+					background-image:url(../img/german-flag-graphic_h.png);
+				}
+				&.cn{
+					background-image:url(../img/Flag_of_China_h.png);
+				}
+				&.it{
+					background-image:url(../img/Flag_of_Italy_h.png);
+				}
+				&.fr{
+					background-image:url(../img/Flag_of_France_h.png);
+				}
+			}
+			}
+		}
+
+	.container-fluid{
+		width:100%;
+		z-index: 101000000;
+		position:absolute;
+		-webkit-animation-duration: .6s;
+		-o-animation-duration: .6s;
+		-moz-animation-duration: .6s;
+		animation-duration: .6s;
+
+		-webkit-animation-delay: 1s;
+		-o-animation-delay: 1s;
+		-moz-animation-delay: 1s;
+		animation-delay: 1s;
+		-webkit-transition: all 0.4s ease;
+		background-color:$darkGrey;
+		ul{
+			padding:23px 0px 17px;
+			width:54%;
+			margin:auto;
+			list-style: none;
+			display:flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			li{
+				cursor: pointer;
+				margin-bottom: 15px;
+				display: flex;
+				@include font($Sams,1rem,400,$darkPurple);
+				.head-flag{
+					margin-left:10px;
+					height:23px;
+					width:23px;
+					background-image:url(../img/Union_flag.png);
+					background-repeat:no-repeat;
+					background-position: center;
+
+				}
+				& .head-flag.en.active,&:hover .head-flag.en{
+					background-image:url(../img/Union_flag_h.png);
+				}
+				.head-flag.ru{
+					background-image:url(../img/Flag_of_Russia.png);
+				}
+				&.active,&:hover .head-flag.ru{
+					background-image:url(../img/Flag_of_Russia_h.png);
+				}
+				.head-flag.gr{
+					background-image:url(../img/german-flag-graphic.png);
+				}
+				&.active,&:hover .head-flag.gr{
+					background-image:url(../img/german-flag-graphic_h.png);
+				}
+				.head-flag.fr{
+					background-image:url(../img/Flag_of_France.png);
+				}
+				&.active,&:hover .head-flag.fr{
+					background-image:url(../img/Flag_of_France_h.png);
+				}
+				.head-flag.it{
+					background-image:url(../img/Flag_of_Italy.png);
+				}
+				&.active,&:hover .head-flag.it{
+					background-image:url(../img/Flag_of_Italy_h.png);
+				}
+				.head-flag.ch{
+					background-image:url(../img/Flag_of_China.png);
+
+				}
+				&.active,&:hover .head-flag.ch{
+					background-image:url(../img/Flag_of_China_h.png);
+				}
+			}
+		}
+		&.hid{
+			background-color: transparent;
+			ul{
+				li{
+					color:transparent;
+					.head-flag{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

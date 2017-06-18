@@ -1,0 +1,127 @@
+footer{
+  background-color: $darkPurple;
+  padding: 55px 0px 20px;
+  .social-menu{
+    @include breakpoint(max-width 1000px){
+      h5{
+        text-align: center;
+      }
+      ul{
+        justify-content: center;
+        margin:30px 0px;
+        li{
+          margin:0px 20px;
+        }
+      }
+      a.social{
+        width:200px;
+        text-align: center;
+        display: block!important;
+        margin:10px auto 0px;
+      }
+    }
+    h5{
+      margin:0px 0px 10px 0px;
+      text-transform: uppercase;
+
+      @include font($Sams,0.875rem,400,white);
+    }
+    ul{
+      list-style: none;
+      padding: 0px;
+      display: flex;
+      li{
+        width:40px;
+        height:40px;
+        background-color:white;
+        margin-right: 15px;
+        border-radius: 50%;
+        i{
+          color:$darkPurple;
+          font-size: 25px;
+          padding: 8px 0px 0px 10px;
+        }
+        &:first-child i{
+          padding: 8px 0px 0px 13px;
+        }
+        &:nth-child(4){
+          background-color:$darkPurple;
+        }
+        &:nth-child(4) i{
+          padding:0px;
+          color:white;
+          position:relative;
+          top:-3px;
+          left:1px;
+          font-size:45px;
+        }
+        &:nth-child(4):hover i{
+          color:$secondColor;
+        }
+        &:hover:not(:nth-child(4)){
+          background-color:$secondColor;
+        }
+      }
+    }
+    a.social{
+      margin-top:10px;
+      border-radius: 2px;
+      text-decoration: none;
+      display: inline-block;
+      padding: 14px 36px;
+      text-transform: uppercase;
+      background-color:$mainColor;
+      @include font($Sams,0.875rem,400,white);
+      &:hover{
+        background-color:$mainColorHover;
+      }
+    }
+  }
+  .link-menu{
+    @include breakpoint(max-width 650px){
+      display: none;
+    }
+    &>ul{
+      margin-bottom: 35px;
+      @include breakpoint(max-width 1040px){
+
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li{
+          &:not(:nth-child(4)){
+            margin-right:0px!important;
+          }
+          h5{
+            @include font($Sams,0.875rem,400,white);
+            margin:0px 0px 20px;
+            text-transform: uppercase;
+          }
+          ul{
+            li{
+              margin-bottom:15px;
+              a{
+                text-decoration: none;
+                @include font($Sams,0.875rem,400,#4b4c6e);
+                &:hover{
+                  color:$mainColorHover;
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+  p{
+    padding: 25px 0px 0px;
+    text-align: center;
+    border-top:1px solid #221d38;
+    @include font($Sams,0.875rem,400,white);
+    i{
+      color:#de4d74;
+    }
+  }
+}

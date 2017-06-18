@@ -1,0 +1,55 @@
+/*  ====================    OUR HEADER   ====================*/
+header{
+  .container{
+    padding: 15px 0px 10px;
+    display:flex;
+    @include breakpoint(max-width 800px){
+      flex-direction: column;
+      align-items: center;
+      .head-log{
+        margin-left: auto;
+        margin-bottom:20px;
+        display: none;
+      }
+      .head-menu{
+        width:90%;
+        flex-direction: column;
+        align-items: center;
+        ul{
+          padding-left:0px;
+        }
+        a.head-button{
+          margin-bottom: 15px;
+        }
+        .flag{
+          background-position-x: 0%!important;
+          background-position-y: 0%!important;
+        }
+      }
+    }
+
+  }
+  .container-fluid {
+
+    ul {
+      @include breakpoint(max-width 1120px) {
+        width: 80% !important;
+        @include breakpoint(max-width 800px) {
+          justify-content: center!important;
+
+          li{
+            margin-right:30px!important;
+          }
+        }
+      }
+    }
+  }
+}
+header.sticky{
+  @include breakpoint(max-width 800px){
+    a.head-button{
+      margin:10px auto!important;
+    }
+  }
+
+}

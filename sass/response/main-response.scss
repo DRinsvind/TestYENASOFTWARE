@@ -1,0 +1,155 @@
+main.container-fluid{
+  padding:0px;
+  .banner{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include breakpoint(max-width 500px){
+      background-position: right;
+    }
+    .container{
+      @include breakpoint(max-width 850px){
+        text-align: center;
+        @include breakpoint(max-width 500px){
+          h2{
+            font-size: 2rem!important;
+          }
+        }
+        a.head-button.navigation{
+          display: block;
+          margin:0px auto;
+        }
+      }
+    }
+  }
+  .works{
+    .work-list{
+      @include breakpoint(max-width 1100px){
+        flex-wrap: wrap;
+        @include breakpoint(max-width 900px){
+          justify-content: space-around;
+          .work-item{
+            margin-right:0px;
+          }
+        }
+      }
+
+    }
+  }
+  .sing{
+    background-color:$darkPurple;
+    padding: 60px 0px 75px;
+    text-align: center;
+    h3{
+      margin: 0px 0px 40px;
+    }
+  }
+  .categories{
+    .categories-list{
+      @include breakpoint(max-width 1220px){
+        justify-content: space-around;
+        .categories-item{
+            width: 45%;
+          @include breakpoint(max-width 800px){
+            width: 90%;
+            text-align: center;
+            p{
+              margin-bottom: 60px;
+            }
+            a{
+              margin-left: 0px;
+              position:relative;
+            }
+          }
+        }
+      }
+
+    }
+    .navigation.head-button{
+      margin:35px auto 70px;
+      display:block;
+      text-align: center;
+    }
+  }
+
+
+  section.price{
+    background-color:$grey;
+    padding: 80px 0px 90px;
+    @include breakpoint(max-width 670px){
+      padding: 80px 0px 40px;
+    }
+    h3{
+      margin:0px;
+      margin-bottom:75px;
+    }
+    .price-list{
+      @include breakpoint(max-width 1120px){
+
+        .price-item{
+          min-width: 300px;
+            margin-bottom:50px;
+
+          @include breakpoint(max-width 670px){
+            width: 90%;
+            max-width: 90%;
+            padding-bottom: 0px;
+            &:not(:nth-child(3)){
+              margin-bottom:80px;
+            }
+            a{
+              padding: 15px 20px;
+              border-radius: 3px;
+              position:relative;
+              left:0%;
+              display: inline-block;
+              margin:60px auto 0px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  section.sing.sing-bottom{
+    background-color:$secondColor;
+    a{
+      background-color:white;
+      color:$secondColor;
+    }
+  }
+  section.form{
+    form.first{
+      .form-group{
+        @include breakpoint(max-width 900px){
+          max-width: 530px;
+          width: 100%;
+          &:nth-child(n){
+            margin:0px 0px 20px 0px;
+          }
+        }
+
+
+      }
+    }
+    .check-groups{
+      width:70%;
+      display: flex;
+      @include breakpoint(max-width 980px){
+        width:80%;
+        @include breakpoint(max-width 880px){
+          flex-direction: column;
+          align-items: center;
+          .check-group{
+            margin: 0px auto;
+            h4{
+              margin:20px 0px!important;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+

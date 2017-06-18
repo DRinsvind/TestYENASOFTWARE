@@ -1,0 +1,180 @@
+a.head-button{
+  background-color:$mainColor;
+  text-transform: uppercase;
+  @include font($Sams,0.875rem,400,$white);
+  text-decoration: none;
+  padding: 15px 33px;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+a.head-button:hover{
+  background-color:$mainColorHover;
+}
+a.head-button.navigation{
+  padding: 15px 50px;
+  max-width: 175px;
+  border-radius: 2px;
+  @include font($Sams,1.125rem,400,$white);
+}
+h3.section-title{
+  padding: 0px;
+  text-align: center;
+  margin:70px 0px 40px;
+  @include font($Sams,1.53rem,400,$darkPurple);
+}
+.white{
+  color:white!important;
+}
+.container{
+  padding-left:0px!important;
+  padding-right:0px!important;
+}
+///*  ====================    OUR MODIFICATIONS   ====================*/
+//
+//.white{
+//	background-color:$white;
+//}
+//.uppercase{
+//	text-transform: uppercase;
+//}
+///*  ====================    TAG A "MORE"    ====================*/
+//
+//.a-more{
+//	text-align:center;
+//  	a{
+//  		display:inline-block;
+//  		background:white;
+//  		padding: 14px 112px;
+//  		border:2px solid $red;
+//  		@include font($Sams,1.125rem,500,$red);
+//  		margin:50px auto;
+//  		transition-duration: 200ms;
+//  		text-decoration: none;
+//  		&:hover {
+//			background:$red;
+//			color:$white;
+//
+//  		}
+//  	}
+//
+//}
+///*  ====================    TITLE FOR PAGE    ====================*/
+//a{
+//	text-decoration: none;
+//	h2.item-card{
+//		margin:0px;
+//		padding:0px;
+//		text-align:left;
+//		@include font($Sams,1.5rem,400,$main_black);
+//
+//	}
+//	&:hover h2{
+//		color:$red;
+//	}
+//}
+///*  ====================    TITLE FOR PAGE    ====================*/
+//.title-page{
+//		margin-top:24px;
+//		margin-bottom:24px;
+//		width:100%;
+//		padding: 24px 0px;
+//		background-color:$white;
+//		h1{
+//			padding: 0px;
+//			margin:0px;
+//			text-align: center;
+//			@include font($Sams,1.5rem,400,$red);
+//			letter-spacing: 1.5px;
+//			text-transform: uppercase;
+//		}
+//	}
+///*  ====================    SOCIAL FOOTER FOR PAGE    ====================*/
+//	.social-foot{
+//		background-color:$white;
+//		margin:24px 0px 24px;
+//		ul{
+//			list-style: none;
+//			display: flex;
+//			justify-content: space-around;
+//			li{
+//				padding: 36px 0px 38px;
+//				a{
+//					@include font($Sams,0.95rem,300,$dark_grey);
+//					text-decoration: none;
+//				}
+//				i{
+//					margin-right: 2px;
+//					font-size: 1.3125rem;
+//					&.fa-twitter{
+//						color:#009CF9;
+//					}
+//					&.fa-facebook{
+//						color:#3B5998;
+//					}
+//					&.fa-vk{
+//						color:#50719C;
+//					}
+//				}
+//				& a:hover{
+//					text-decoration: underline;
+//					color:$red;
+//					cursor:pointer;
+//					i{
+//						color:$red;
+//					}
+//				}
+//
+//			}
+//		}
+//	}
+///*  ====================    MAIN RULES    ====================*/
+//main.container-fluid{
+//background-color:$lightGrey;
+//	.container{
+//		padding: 0px
+//	}
+//}
+//// ==================== TAGS SPAN ===============================
+//
+//span.tag-for-news{
+//	margin-right: 10px;
+//	a {
+//		@include font($Sams, 0.9rem, 400, $grey);
+//		text-decoration: none;
+//		&:hover{
+//			color: $red;
+//		}
+//	}
+//}
+//// ==================== TAGS SPAN TIME===============================
+//
+// span.time{
+//
+//	@include font($Sams, 0.9rem, 400, $grey);
+//}
+//
+////====================  TITLE WITH As  ===============================
+//
+//.title-page-with-a{
+//	display:flex;
+//	a{
+//		width:35%;
+//		margin:0px;
+//		margin:25px 0px;
+//		background-color:$white;
+//
+//		padding:24px 0px;
+//		text-align: center;
+//		@include font($Sams,1.5rem,400,$red);
+//			letter-spacing: 1.5px;
+//		&.active{
+//			width:68%;
+//			background-color:$red;
+//			color:$white;
+//		}
+//
+//	}
+//}
+//
+//
+//
