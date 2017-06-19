@@ -1,12 +1,12 @@
 {
-  "name": "antiraid",
+  "name": "TestYENASOFTWARE",
   "version": "1.0.0",
-  "description": "antiraid",
+  "description": "test work for YENASOFTWARE",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Rad",
+  "author": "Lucenko Illia",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.8",
